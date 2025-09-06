@@ -17,7 +17,7 @@ function Hero() {
         <div className="flex flex-col items-center justify-center gap-6">
           <Badge title="Currently accepting new projects" />
           <div className="flex flex-col items-center justify-center max-w-3xl gap-4.5 ">
-            <h1 className="text-7xl sm:text-8xl font-bold text-white   text-center leading-[76.8px]">
+            <h1 className="text-6xl sm:text-8xl font-bold text-white   text-center leading-[76.8px]">
               Frontend Developer & UI/UX Enthusiast
             </h1>
             <p className="text-base leading-[24px] font-normal text-white text-center">
@@ -28,7 +28,7 @@ function Hero() {
           </div>
         </div>
 
-        <div className="flex items-center justify-center gap-8">
+        <div className="flex items-center justify-center gap-8 flex-col sm:flex-row">
           <Button variant="primary">
             <div className="size-5">
               <CallIcon />

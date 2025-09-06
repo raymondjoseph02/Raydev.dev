@@ -41,7 +41,7 @@ function Nav({ className = "" }: NavProps) {
   const handleCloseMenu = () => setIsOpen(false);
 
   return (
-    <header className={`w-full bg-transparent fixed top-0 z-50 ${className}`}>
+    <header className={`w-full bg-transparent fixed top-0 z-100 ${className}`}>
       <nav className="flex justify-between items-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 bg-transparent">
         <Link
           aria-label="Navigate to home page"
@@ -70,7 +70,9 @@ function Nav({ className = "" }: NavProps) {
         {/* Desktop Navigation */}
         <div className="md:flex items-center gap-8 hidden">
           <NavLinks links={links} />
-          <Socials />
+          <div>
+            <Socials />
+          </div>
         </div>
 
         {/* Hamburger Menu Button */}

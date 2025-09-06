@@ -8,7 +8,7 @@ function Footer() {
     >
       <div className="relative h-[calc(100vh+300px)] -top-[100vh]">
         <div className="h-[400px] sticky top-[calc(100vh-300px)] container-wrapper">
-          <div className=" pb-4 pt-30 flex w-full justify-between items-center  border-b border-b-gray-250 ">
+          <div className=" pb-4 pt-30 flex w-full justify-between items-center  border-b border-b-gray-250  flex-col-reverse sm:flex-row">
             <div>
               <p className="text-base font-normal text-white leading-[24px]  text-pretty">
                 Copyright © 2024 Raymond Joseph
@@ -17,7 +17,9 @@ function Footer() {
                 Last updated - May 2025
               </p>
             </div>
-            <Socials />
+            <div className="">
+              <Socials />
+            </div>
           </div>
           <p
             data-text="Raymond j"

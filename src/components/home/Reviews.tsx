@@ -14,7 +14,7 @@ function Reviews() {
             their businesses.
           </p>
         </article>
-        <div className="flex flex-wrap gap-9">
+        <div className="flex flex-wrap gap-9 items-center justify-center">
           {Array.from({ length: 6 }).map((_, i) => (
             <ReviewCard key={i} />
           ))}

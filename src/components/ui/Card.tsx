@@ -2,7 +2,7 @@ import Image from "next/image";
 import { CardProps } from "@/types/types";
 function Card({ description, stack, thumbnail, title }: CardProps) {
   return (
-    <div className="flex w-full gap-5 items-center  p-8 h-105 border border-gray-250 rounded-2xl overflow-hidden perspective-dramatic flex-col sm:flex-row">
+    <div className="flex w-full gap-5 items-center  p-8 sm:h-105 border border-gray-250 rounded-2xl overflow-hidden perspective-dramatic flex-col sm:flex-row">
       <div className="space-y-5 max-w-lg flex-1">
         <article className="space-y-5">
           <h5 className="text-4xl text-white font-bold">{title}</h5>

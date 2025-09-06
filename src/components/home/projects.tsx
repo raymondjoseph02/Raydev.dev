@@ -8,7 +8,7 @@ function Projects() {
     <section className="bg-black pt-8  sm:pt-28 pb-20">
       <div className="container-wrapper ">
         <div className="space-y-13.5 ">
-          <div className="flex sm:items-center justify-between w-full flex-col  items-start gap-3">
+          <div className="flex sm:items-center justify-between w-full flex-col  items-start gap-3 sm:flex-row">
             <article className="flex flex-col sm:gap-2">
               <h3 className="text-white text-5xl font-normal leading-[57.2px]">
                 Work.

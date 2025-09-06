@@ -43,7 +43,7 @@ function Hero() {
           </Button>
         </div>
 
-        <div className="h-[50rem] w-full bg-red-400 rounded-2xl"></div>
+        <div className="h-[24rem]  lg:h-[50rem] w-full bg-red-400 rounded-2xl"></div>
       </div>
     </section>
   );

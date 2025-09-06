@@ -5,15 +5,15 @@ import { projects } from "@/data/projects";
 
 function Projects() {
   return (
-    <section className="bg-black  pt-28 pb-20">
+    <section className="bg-black pt-8  sm:pt-28 pb-20">
       <div className="container-wrapper ">
         <div className="space-y-13.5 ">
-          <div className="flex items-center justify-between w-full">
-            <article className="flex flex-col gap-2">
+          <div className="flex sm:items-center justify-between w-full flex-col  items-start gap-3">
+            <article className="flex flex-col sm:gap-2">
               <h3 className="text-white text-5xl font-normal leading-[57.2px]">
                 Work.
               </h3>
-              <p className="text-5xl font-normal leading-[57.2px] text-[#aaaaaa]">
+              <p className="text-3xl sm:text-5xl font-normal leading-[57.2px] text-[#aaaaaa]">
                 A selection of recent projects
               </p>
             </article>

@@ -6,7 +6,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useCallback, useRef } from "react";
 import SvgCurve from "./curve/Curve";
-import Socials, { socials } from "./Socials";
+import { socials } from "./Socials";
 
 function MobileMenu({ isOpen, setIsOpen, links }: MobileMenuProps) {
   const path = usePathname();

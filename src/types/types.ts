@@ -45,3 +45,9 @@ export interface DialogProps {
   setIsOpen: React.Dispatch<SetStateAction<boolean>>;
   children: ReactNode;
 }
+
+export type Tool = {
+  icon: ReactNode;
+  title: string;
+};
+export type ToolCardProps = Tool;

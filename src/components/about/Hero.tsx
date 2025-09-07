@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import Button from "../ui/Button";
 import { PlusIcon } from "../../../public/svg/general";
 import HeroImages from "./HeroImage";
+import { MyTools } from "@/data/tools";
+import ToolsCard from "./ToolsCard";
 
 function AboutHero() {
   const [isFullView, setIsFullView] = useState(false);
@@ -73,10 +75,10 @@ function AboutHero() {
         </motion.div>
 
         {/* Main content */}
-        <div className="grid grid-cols-1 sm:grid-cols-[67%_30%] gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-[57%_40%] lg:grid-cols-[67%_30%] gap-12">
           <div className="space-y-5">
             <motion.h1
-              className="text-3xl sm:text-4xl md:text-6xl font-normal sm:leading-[57px] text-white"
+              className="text-3xl sm:text-4xl lg:text-6xl font-normal sm:leading-[57px] text-white"
               layout // Smooth layout shifts
             >
               Product Designer and Webflow Developer.
@@ -218,6 +220,17 @@ function AboutHero() {
                 </motion.p>
               </motion.div>
             </motion.div>
+
+            <div className="space-y-4">
+              <h4>Tools I use</h4>
+              <ul className="grid grid-cols-5 gap-4 flex-wrap">
+                {MyTools.map((tool, index) => (
+                  <li key={index}>
+                    <ToolsCard title={tool.title} icon />
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
 
           {/* Image gallery with subtle animations */}

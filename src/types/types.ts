@@ -39,3 +39,9 @@ export interface MobileMenuProps {
   setIsOpen: React.Dispatch<SetStateAction<boolean>>;
   links: NavLink[];
 }
+
+export interface DialogProps {
+  isOpen: boolean;
+  setIsOpen: React.Dispatch<SetStateAction<boolean>>;
+  children: ReactNode;
+}

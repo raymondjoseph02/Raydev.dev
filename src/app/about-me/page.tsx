@@ -1,7 +1,9 @@
+import AboutHero from "@/components/about/Hero";
+
 function AboutMe() {
   return (
     <>
-      <p className="text-white">about me </p>
+      <AboutHero />
     </>
   );
 }

@@ -1,8 +1,15 @@
+"use client";
 import { CallIcon, LinkIcon } from "../../../public/svg/general";
 import Badge from "../ui/Badge";
 import Button from "../ui/Button";
 import sunshine_bg from "../../../public/webp/Sunshine bg.webp";
+import DialogWrapper from "../ui/Dialog";
+import { useState } from "react";
 function Hero() {
+  const [openDialog, setOpenDialog] = useState(false);
+  const handleDialog = () => {
+    setOpenDialog(true);
+  };
   return (
     <section
       style={{
@@ -35,7 +42,7 @@ function Hero() {
             </div>
             <span>Book a call</span>
           </Button>
-          <Button variant="link" href="">
+          <Button variant="secondary" handleClick={handleDialog}>
             <div className="size-5">
               <LinkIcon />
             </div>
@@ -43,13 +50,16 @@ function Hero() {
           </Button>
         </div>
 
-        <div className="h-[24rem]  lg:h-[50rem] w-full bg-red-400 rounded-2xl">
+        <div className="h-[24rem]  lg:h-[50rem] w-full bg-red-400 rounded-2xl"></div>
+      </div>
+      <DialogWrapper isOpen={openDialog} setIsOpen={setOpenDialog}>
+        <div className="max-w-5xl w-7xl bg-red-300 h-11/12 ">
           <iframe
             className="w-full h-full"
             src="/pdf/Raymond Joseph Front-End Deveioper.pdf"
           />
         </div>
-      </div>
+      </DialogWrapper>
     </section>
   );
 }

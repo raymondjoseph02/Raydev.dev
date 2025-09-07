@@ -41,8 +41,8 @@ function Nav({ className = "" }: NavProps) {
   const handleCloseMenu = () => setIsOpen(false);
 
   return (
-    <header className={`w-full bg-transparent fixed top-0 z-100 ${className}`}>
-      <nav className="flex justify-between items-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 bg-transparent">
+    <header className={`w-full bg-transparent  fixed top-0 z-100 ${className}`}>
+      <nav className="flex justify-between items-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 bg-transparent backdrop-blur-md">
         <Link
           aria-label="Navigate to home page"
           className="flex items-center gap-4 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded-md transition-all duration-200"

@@ -38,3 +38,17 @@ export const LinkIcon = () => (
     />
   </svg>
 );
+export const PlusIcon = () => (
+  <svg
+    width={21}
+    height={21}
+    viewBox="0 0 21 21"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M9.66699 9.66699V4.66699H11.3337V9.66699H16.3337V11.3337H11.3337V16.3337H9.66699V11.3337H4.66699V9.66699H9.66699Z"
+      fill="currentColor"
+    />
+  </svg>
+);

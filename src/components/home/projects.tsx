@@ -17,7 +17,7 @@ function Projects() {
                 A selection of recent projects
               </p>
             </article>
-            <Button variant="link">
+            <Button variant="link" href="/about-me">
               <span>View My Works</span>
               <ChevronRight size={14} className="text-xs" />
             </Button>

@@ -1,7 +1,7 @@
 import { ButtonProps } from "@/types/types";
 import Link from "next/link";
 
-function Button({ children, handleClick, variant }: ButtonProps) {
+function Button({ children, handleClick, variant, href }: ButtonProps) {
   const classes = () => {
     switch (variant) {
       case "primary":
@@ -20,7 +20,7 @@ function Button({ children, handleClick, variant }: ButtonProps) {
       case "link":
         return (
           <Link
-            href=""
+            href={href!}
             className={`${classes()} py-2 px-3 rounded-full gap-3 flex items-center max-h-12 text-sm min-w-44 min-h-12 justify-center cursor-pointer`}
           >
             {children}

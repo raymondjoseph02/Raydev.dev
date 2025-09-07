@@ -9,6 +9,7 @@ export interface ButtonProps {
   variant: "primary" | "secondary" | "link";
   children: ReactNode;
   handleClick?: () => void;
+  href?: string;
 }
 export type ProjectDataProps = {
   title: string;

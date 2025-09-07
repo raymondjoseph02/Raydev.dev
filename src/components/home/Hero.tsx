@@ -1,4 +1,4 @@
-import { CallIcon } from "../../../public/svg/general";
+import { CallIcon, LinkIcon } from "../../../public/svg/general";
 import Badge from "../ui/Badge";
 import Button from "../ui/Button";
 import sunshine_bg from "../../../public/webp/Sunshine bg.webp";
@@ -35,15 +35,20 @@ function Hero() {
             </div>
             <span>Book a call</span>
           </Button>
-          <Button variant="secondary">
+          <Button variant="link" href="">
             <div className="size-5">
-              <CallIcon />
+              <LinkIcon />
             </div>
-            <span>Book a call</span>
+            <span>My resume</span>
           </Button>
         </div>
 
-        <div className="h-[24rem]  lg:h-[50rem] w-full bg-red-400 rounded-2xl"></div>
+        <div className="h-[24rem]  lg:h-[50rem] w-full bg-red-400 rounded-2xl">
+          <iframe
+            className="w-full h-full"
+            src="/pdf/Raymond Joseph Front-End Deveioper.pdf"
+          />
+        </div>
       </div>
     </section>
   );

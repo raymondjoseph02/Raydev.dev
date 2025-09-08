@@ -27,7 +27,7 @@ function AboutHero() {
   const collapsedHeight = "36.5rem";
 
   return (
-    <section className="pt-20 sm:pt-28 pb-3.5">
+    <section className="pt-20 sm:pt-28 pb-18 sm:pb-40.5">
       <motion.div
         ref={contentRef}
         initial={{
@@ -47,10 +47,10 @@ function AboutHero() {
       >
         {/* Backdrop overlay with improved performance */}
         <motion.div
-          className="absolute left-0 w-full h-40 bottom-0 right-0 z-10"
+          className="absolute left-0 w-full h-30  sm:h-40 bottom-0 right-0 z-10"
           style={{
-            background: "linear-gradient(to top, rgba(0,0,0,0.8), transparent)",
-            backdropFilter: "blur(8px)",
+            background: "linear-gradient(to top, rgba(0,0,0,0.4), transparent)",
+            backdropFilter: "blur(6px)",
           }}
           animate={{
             opacity: isFullView ? 0 : 1,
@@ -79,14 +79,16 @@ function AboutHero() {
           <div className="space-y-5">
             <motion.h1
               className="text-3xl sm:text-4xl lg:text-6xl font-normal sm:leading-[57px] text-white"
-              layout // Smooth layout shifts
+              initial={{ x: -30, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ ease: "easeInOut", duration: 0.6 }}
             >
-              Product Designer and Webflow Developer.
+              Frontend web Developer.
             </motion.h1>
 
             <motion.div className="space-y-4" layout>
               <motion.p
-                className="text-xl font-normal leading-[30px] text-gray-350"
+                className="text-base sm:text-xl font-normal leading-[30px] text-gray-350"
                 variants={{
                   hidden: { opacity: 0, y: 20 },
                   visible: { opacity: 1, y: 0 },
@@ -95,10 +97,10 @@ function AboutHero() {
                 animate={"visible"}
                 transition={{ duration: 0.5, delay: 0.03 }}
               >
-                I&apos;m Ekene Smart, a product designer and no-code developer
-                crafting digital experiences that deliver meaningful results. My
-                approach combines strategic design thinking with technical
-                execution to create products that stand out.
+                I&apos;m Raymond Joseph, a product designer and no-code
+                developer crafting digital experiences that deliver meaningful
+                results. My approach combines strategic design thinking with
+                technical execution to create products that stand out.
               </motion.p>
               <motion.p
                 variants={{
@@ -108,7 +110,7 @@ function AboutHero() {
                 initial="hidden"
                 animate={"visible"}
                 transition={{ duration: 0.5, delay: 0.03 }}
-                className="text-xl font-normal leading-[30px] text-gray-350"
+                className="text-base  sm:text-xl font-normal leading-[30px] text-gray-350"
               >
                 My creative journey began in the tactile world of handcrafted
                 arts, from signposts to screen printing, giving me a deep
@@ -123,7 +125,7 @@ function AboutHero() {
                 initial="hidden"
                 animate={"visible"}
                 transition={{ duration: 0.5, delay: 0.03 }}
-                className="text-xl font-normal leading-[30px] text-gray-350"
+                className="text-base  sm:text-xl font-normal leading-[30px] text-gray-350"
               >
                 This foundation proved invaluable as I transitioned into the
                 digital realm, evolving from graphic design to branding, and
@@ -131,7 +133,7 @@ function AboutHero() {
                 solve complex problems with elegant solutions.
               </motion.p>
               <motion.p
-                className="text-xl font-normal leading-[30px] text-gray-350"
+                className="text-base  sm:text-xl font-normal leading-[30px] text-gray-350"
                 variants={{
                   hidden: { opacity: 0, y: 20 },
                   visible: { opacity: 1, y: 0 },
@@ -160,7 +162,7 @@ function AboutHero() {
                 }}
               >
                 <motion.p
-                  className="text-xl font-normal leading-[30px] text-gray-350"
+                  className="text-base  sm:text-xl font-normal leading-[30px] text-gray-350"
                   variants={{
                     hidden: { opacity: 0, y: 20 },
                     visible: { opacity: 1, y: 0 },
@@ -175,7 +177,7 @@ function AboutHero() {
                 </motion.p>
 
                 <motion.p
-                  className="text-xl font-normal leading-[30px] text-gray-350"
+                  className="text-base  sm:text-xl font-normal leading-[30px] text-gray-350"
                   variants={{
                     hidden: { opacity: 0, y: 20 },
                     visible: { opacity: 1, y: 0 },
@@ -191,7 +193,7 @@ function AboutHero() {
                 </motion.p>
 
                 <motion.p
-                  className="text-xl font-normal leading-[30px] text-gray-350"
+                  className="text-base  sm:text-xl font-normal leading-[30px] text-gray-350"
                   variants={{
                     hidden: { opacity: 0, y: 20 },
                     visible: { opacity: 1, y: 0 },
@@ -221,12 +223,14 @@ function AboutHero() {
               </motion.div>
             </motion.div>
 
-            <div className="space-y-4">
-              <h4>Tools I use</h4>
+            <div className="space-y-4 pt-10">
+              <h4 className="text-xl font-bold text-white leading-[30px]">
+                Tools I use
+              </h4>
               <ul className="grid grid-cols-5 gap-4 flex-wrap">
                 {MyTools.map((tool, index) => (
                   <li key={index}>
-                    <ToolsCard title={tool.title} icon />
+                    <ToolsCard title={tool.title} icon={tool.icon} />
                   </li>
                 ))}
               </ul>

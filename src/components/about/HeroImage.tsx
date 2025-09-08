@@ -4,7 +4,10 @@ import gym_image from "../../../public/png/gym-1.jpeg";
 
 function HeroImages() {
   return (
-    <motion.div className="flex-col flex gap-10 justify-between" layout>
+    <motion.div
+      className="flex-col sm:flex gap-10 justify-between hidden"
+      layout
+    >
       <motion.div
         className="max-h-104 h-full w-full max-w-xs overflow-hidden rounded-2xl rotate-6"
         animate={{ rotate: 8 }}

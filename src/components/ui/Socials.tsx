@@ -24,7 +24,7 @@ function Socials() {
         <li className="relative" key={social.label}>
           <Link
             aria-label={social.label}
-            className="size-10 rounded-full justify-center hover:bg-[#242424] text-white flex items-center transition ease-in-out duration-300 will-change-auto text-4xl"
+            className="size-10 rounded-full justify-center hover:bg-[#242424] text-white flex items-center transition ease-in-out duration-300 will-change-auto text-2xl"
             href={social.link}
           >
             {social.icon}

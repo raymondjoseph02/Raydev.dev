@@ -5,42 +5,42 @@ import Image from "next/image";
 export const MyTools: Tool[] = [
   {
     title: "typescript",
-    icon: <FaJs />,
+    icon: <Image src={js} alt={"JavaScript"} width={40} height={40} />,
   },
   {
     title: "JavaScript",
-    icon: <Image src={js} alt={"JavaScript"} />,
+    icon: <Image src={js} alt={"JavaScript"} width={40} height={40} />,
   },
   {
     title: "React",
-    icon: <div></div>,
+    icon: <Image src={js} alt={"JavaScript"} width={40} height={40} />,
   },
   {
     title: "Next",
-    icon: <div></div>,
+    icon: <Image src={js} alt={"JavaScript"} width={40} height={40} />,
   },
   {
     title: "Framer motion",
-    icon: <div></div>,
+    icon: <Image src={js} alt={"JavaScript"} width={40} height={40} />,
   },
   {
     title: "gsap",
-    icon: <div></div>,
+    icon: <Image src={js} alt={"JavaScript"} width={40} height={40} />,
   },
   {
     title: "tailwind ",
-    icon: <div></div>,
+    icon: <Image src={js} alt={"JavaScript"} width={40} height={40} />,
   },
   {
     title: "Git",
-    icon: <div></div>,
+    icon: <Image src={js} alt={"JavaScript"} width={40} height={40} />,
   },
   {
     title: "RestApi",
-    icon: <div></div>,
+    icon: <Image src={js} alt={"JavaScript"} width={40} height={40} />,
   },
   {
     title: "Redux",
-    icon: <div></div>,
+    icon: <Image src={js} alt={"JavaScript"} width={40} height={40} />,
   },
 ];

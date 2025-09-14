@@ -32,7 +32,7 @@ function Button({ children, handleClick, variant, href }: ButtonProps) {
         return (
           <button
             onClick={handleClick}
-            className={`${classes()} py-2 px-3 rounded-full gap-3 flex items-center max-h-12 text-sm min-w-44 min-h-12 justify-center cursor-pointer`}
+            className={`${classes()} py-2 px-3 rounded-full gap-3 flex items-center max-h-12 text-sm min-w-40 min-h-12 justify-center cursor-pointer`}
           >
             {children}
           </button>

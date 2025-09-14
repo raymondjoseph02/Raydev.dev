@@ -80,7 +80,7 @@ function MobileMenu({ isOpen, setIsOpen, links }: MobileMenuProps) {
         initial="initial"
         animate={isOpen ? "enter" : "exit"}
         exit="exit"
-        className="fixed top-0 h-screen bg-black right-0 w-8/12 pt-40 flex flex-col justify-between"
+        className="fixed top-0 h-svh bg-black right-0 w-8/12 pt-40 flex flex-col justify-between"
       >
         <ul className="space-y-10">
           {links.map((link, index) => {

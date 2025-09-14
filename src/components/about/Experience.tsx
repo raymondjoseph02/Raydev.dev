@@ -13,7 +13,7 @@ function Experience() {
             development expertise
           </p>
         </div>
-        <div className="grow space-y-8">
+        <div className="grow space-y-8  flex flex-col items-center sm:items-end">
           <ExperienceCard />
           <ExperienceCard />
           <ExperienceCard />

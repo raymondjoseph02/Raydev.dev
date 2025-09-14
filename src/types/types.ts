@@ -51,3 +51,8 @@ export type Tool = {
   title: string;
 };
 export type ToolCardProps = Tool;
+export interface PortfolioHeroProps {
+  activeTab: string;
+  setActiveTab: React.Dispatch<SetStateAction<string>>;
+  tabs?: string[];
+}

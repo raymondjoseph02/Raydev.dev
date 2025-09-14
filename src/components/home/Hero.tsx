@@ -35,7 +35,7 @@ function Hero() {
           </div>
         </div>
 
-        <div className="flex items-center justify-center gap-8 flex-col sm:flex-row">
+        <div className="flex items-center justify-center gap-8 flex-col flex-wrap">
           <Button variant="primary">
             <div className="size-5">
               <CallIcon />

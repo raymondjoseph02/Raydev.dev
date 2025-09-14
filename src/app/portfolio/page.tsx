@@ -2,11 +2,11 @@
 import Hero from "@/components/portfolio/Hero";
 import Projects from "@/components/portfolio/Projects";
 import { useEffect, useState } from "react";
-const tabs = ["Personal", "Professional"];
+const tabs = ["clients work", "exploration"];
 
 function Portfolio() {
   const [isLoading, setIsLoading] = useState(true);
-  const [activeTab, setActiveTab] = useState("Personal");
+  const [activeTab, setActiveTab] = useState("clients work");
 
   useEffect(() => {
     const stimulateLoading = () => {
@@ -25,7 +25,9 @@ function Portfolio() {
         willChange: "auto",
       }}
       className={`${
-        isLoading ? "h-svh sm:h-screen justify-center items-center " : "h-auto"
+        isLoading
+          ? "h-svh sm:h-screen justify-center items-center "
+          : "h-auto min-h-screen"
       }`}
     >
       {isLoading ? (

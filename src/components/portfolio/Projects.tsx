@@ -3,10 +3,10 @@ import Card from "../ui/Card";
 
 function Projects({ activeTab }: { activeTab: string }) {
   const filteredProjects = projects.filter((project) => {
-    if (activeTab === "Professional") {
+    if (activeTab === "clients work") {
       return !project.isSideProject;
     }
-    if (activeTab === "Personal") {
+    if (activeTab === "exploration") {
       return project.isSideProject;
     }
     return true; // fallback (shows all if no tab selected)

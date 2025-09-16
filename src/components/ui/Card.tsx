@@ -14,7 +14,7 @@ function Card({ description, stack, thumbnail, title }: CardProps) {
           {stack.map((stk) => (
             <li
               key={stk}
-              className="bg-[#141414] px-3 py-1.5 rounded-full text-white w-fit"
+              className="bg-[#141414] px-3 py-1.5 rounded-full text-white w-fit capitalize"
             >
               <p>{stk}</p>
             </li>
@@ -23,7 +23,7 @@ function Card({ description, stack, thumbnail, title }: CardProps) {
       </div>
 
       <div
-        className="flex-1 h-full overflow-hidden rounded-lg pt-13.5 
+        className="flex-1 h-full overflow-hidden rounded-lg  
                   transition ease-linear duration-300 hidden sm:block 
                   group-hover:scale-105  group-hover:rotate-2"
       >

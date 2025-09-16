@@ -14,7 +14,7 @@ function Projects({ activeTab }: { activeTab: string }) {
 
   return (
     <section>
-      <div className="container-wrapper space-y-9">
+      <div className="container-wrapper space-y-9 pb-10 sm:pb-20">
         {filteredProjects.length > 0 ? (
           filteredProjects.map((project, index) => (
             <Card

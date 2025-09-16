@@ -1,8 +1,9 @@
+"use client";
 import { ChevronRight } from "lucide-react";
 import Button from "../ui/Button";
 import Card from "../ui/Card";
 import { projects } from "@/data/projects";
-
+import { motion } from "framer-motion";
 function Projects() {
   return (
     <section className="bg-black pt-8  sm:pt-28 pb-20">
@@ -24,13 +25,21 @@ function Projects() {
           </div>
           <div className="space-y-12">
             {projects.map((project) => (
-              <Card
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{
+                  opacity: 1,
+                  y: 0,
+                }}
                 key={project.title}
-                title={project.title}
-                thumbnail={project.images.thumbnail}
-                description={project.description}
-                stack={project.stack}
-              />
+              >
+                <Card
+                  title={project.title}
+                  thumbnail={project.images.thumbnail}
+                  description={project.description}
+                  stack={project.stack}
+                />
+              </motion.div>
             ))}
           </div>
         </div>

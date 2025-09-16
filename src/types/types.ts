@@ -10,6 +10,7 @@ export interface ButtonProps {
   children: ReactNode;
   handleClick?: () => void;
   href?: string;
+  target?: "_blank" | "_parent" | "_top";
 }
 export type ProjectDataProps = {
   title: string;

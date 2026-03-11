@@ -2,7 +2,6 @@ import { ProjectDataProps } from "@/types/types";
 import smartFilingThumbnail from "../../public/png/social-graph.png";
 import pay4me from "../../public/png/Pay4me Cover.png";
 import audio_phile from "../../public/png/audiophile.png";
-import scaper_walkers from "../../public/png/scape-walkers.png";
 import defifundr_landing from "../../public/png/defifundr-landing.png";
 import ckollect from "../../public/png/ckollect.png";
 import oneapp_workplace from "../../public/png/1app workplace.png";

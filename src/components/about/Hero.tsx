@@ -4,8 +4,6 @@ import { motion } from "framer-motion";
 import Button from "../ui/Button";
 import { PlusIcon } from "../../../public/svg/general";
 import HeroImages from "./HeroImage";
-import { MyTools } from "@/data/tools";
-import ToolsCard from "./ToolsCard";
 
 function AboutHero() {
   const [isFullView, setIsFullView] = useState(false);

@@ -1,11 +1,5 @@
 import { DialogProps } from "@/types/types";
-import {
-  Description,
-  Dialog,
-  DialogBackdrop,
-  DialogPanel,
-  DialogTitle,
-} from "@headlessui/react";
+import { Dialog, DialogBackdrop, DialogPanel } from "@headlessui/react";
 
 function DialogWrapper({ isOpen, setIsOpen, children }: DialogProps) {
   return (

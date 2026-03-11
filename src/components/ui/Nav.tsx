@@ -62,7 +62,7 @@ function Nav({ className = "" }: NavProps) {
               Raymond Joseph
             </p>
             <p className="text-base font-normal leading-6 text-gray-300">
-              Frontend Developer / UX Enthusiast
+              Frontend Developer
             </p>
           </div>
         </Link>

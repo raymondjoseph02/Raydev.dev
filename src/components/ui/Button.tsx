@@ -9,7 +9,7 @@ function Button({ children, handleClick, variant, href, target }: ButtonProps) {
       case "secondary":
         return "bg-gray-500 text-white";
       case "link":
-        return "text-white bg-gray-600 "; // add link style here
+        return "text-white bg-gray-600  hover:border-gray-200 hover:border transition ease-in-out duration-300"; // add link style here
       default:
         return "bg-white";
     }

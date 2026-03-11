@@ -30,6 +30,8 @@ export interface CardProps {
   description: string;
   stack: string[];
   thumbnail: StaticImageData;
+  github?: string;
+  liveLink?: string;
 }
 export type NavLink = {
   path: string;

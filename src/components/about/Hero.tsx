@@ -222,19 +222,6 @@ function AboutHero() {
                 </motion.p>
               </motion.div>
             </motion.div>
-
-            <div className="space-y-4 pt-10">
-              <h4 className="text-xl font-bold text-white leading-[30px]">
-                Tools I use
-              </h4>
-              <ul className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 flex-wrap">
-                {MyTools.map((tool, index) => (
-                  <li key={index}>
-                    <ToolsCard title={tool.title} icon={tool.icon} />
-                  </li>
-                ))}
-              </ul>
-            </div>
           </div>
 
           {/* Image gallery with subtle animations */}

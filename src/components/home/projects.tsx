@@ -24,7 +24,7 @@ function Projects() {
             </Button>
           </div>
           <div className="space-y-12">
-            {projects.map((project) => (
+            {projects.slice(0, 4).map((project) => (
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{
@@ -38,6 +38,8 @@ function Projects() {
                   thumbnail={project.images.thumbnail}
                   description={project.description}
                   stack={project.stack}
+                  github={project.github}
+                  liveLink={project.liveLink}
                 />
               </motion.div>
             ))}

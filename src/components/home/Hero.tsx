@@ -4,11 +4,13 @@ import { motion } from "framer-motion";
 import Badge from "../ui/Badge";
 import Button from "../ui/Button";
 import sunshine_bg from "../../../public/webp/Sunshine bg.webp";
-import DialogWrapper from "../ui/Dialog";
 import { useState } from "react";
 import { useGSAP } from "@gsap/react";
 import { SplitText } from "gsap/all";
 import gsap from "gsap";
+import Image from "next/image";
+import Workplace from "../../../public/png/workplace.png";
+import Link from "next/link";
 
 function Hero() {
   const [openDialog, setOpenDialog] = useState(false);
@@ -57,10 +59,10 @@ function Hero() {
     >
       <div className=" flex justify-center container-wrapper flex-col items-center gap-11">
         <div className="flex flex-col items-center justify-center gap-6">
-          <Badge title="Currently accepting new projects" />
+          <Badge title="Currently Available" />
           <div className="flex flex-col items-center justify-center max-w-3xl gap-4.5 ">
             <h1 className="text-6xl sm:text-8xl font-bold text-white text-center leading-[76.8px] header">
-              Frontend Developer & UI/UX Enthusiast
+              Frontend Developer & Interface Craftsman
             </h1>
             <motion.p
               initial={{
@@ -101,16 +103,18 @@ function Hero() {
           }}
           className="flex items-center justify-center gap-8 flex-col flex-wrap sm:flex-row"
         >
-          <Button variant="primary">
-            <div className="size-5">
-              <CallIcon />
-            </div>
-            <span>Book a call</span>
-          </Button>
+          <Link target="_blank" href="https://cal.com/raymond-joseph-kba6ig">
+            <Button variant="primary">
+              <div className="size-5">
+                <CallIcon />
+              </div>
+              <span>Book a call</span>
+            </Button>
+          </Link>
           <Button
             target="_blank"
             variant="link"
-            href="https://docs.google.com/document/d/15nqiZovoI_GUGg3iSMzxOjE52pcdPjNFEUCBhhBqMaY/edit?usp=sharing"
+            href="https://docs.google.com/document/d/1CVT6vPFTgEFd9ysvsfjWaOrHK7eLgzXqK8CIYYXLhGg/edit?usp=sharing"
           >
             <div className="size-5">
               <LinkIcon />
@@ -118,32 +122,7 @@ function Hero() {
             <span>My resume</span>
           </Button>
         </motion.div>
-
-        <motion.div
-          initial={{
-            opacity: 0,
-            scale: 0.95,
-          }}
-          animate={{
-            opacity: headerAnimationComplete ? 1 : 0,
-            scale: headerAnimationComplete ? 1 : 0.95,
-          }}
-          transition={{
-            delay: headerAnimationComplete ? 0.6 : 0,
-            duration: 0.8,
-            ease: "easeOut",
-          }}
-          className="h-[24rem] lg:h-[50rem] w-full bg-red-400 rounded-2xl"
-        />
       </div>
-      <DialogWrapper isOpen={openDialog} setIsOpen={setOpenDialog}>
-        <div className="max-w-5xl w-7xl bg-red-300 h-11/12 ">
-          <iframe
-            className="w-full h-full"
-            src="/pdf/Raymond Joseph Front-End Deveioper.pdf"
-          />
-        </div>
-      </DialogWrapper>
     </section>
   );
 }

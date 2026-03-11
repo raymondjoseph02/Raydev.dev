@@ -23,6 +23,8 @@ function Projects({ activeTab }: { activeTab: string }) {
               thumbnail={project.images.thumbnail}
               description={project.description}
               stack={project.stack}
+              github={project.github}
+              liveLink={project.liveLink}
             />
           ))
         ) : (

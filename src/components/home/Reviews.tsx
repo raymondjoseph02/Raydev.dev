@@ -91,7 +91,14 @@ function Reviews() {
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: direction * -60 }}
                 transition={{ duration: 0.4, ease: "easeInOut" }}
-                className="flex flex-col items-center text-center gap-10"
+                drag="x"
+                dragConstraints={{ left: 0, right: 0 }}
+                dragElastic={0.2}
+                onDragEnd={(_, info) => {
+                  if (info.offset.x < -50) next();
+                  else if (info.offset.x > 50) prev();
+                }}
+                className="flex flex-col items-center text-center gap-10 cursor-grab active:cursor-grabbing"
               >
                 <p className="text-white text-xl md:text-2xl font-normal leading-relaxed text-pretty">
                   {review.content}

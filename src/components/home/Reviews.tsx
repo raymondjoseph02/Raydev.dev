@@ -58,7 +58,7 @@ function Reviews() {
   const review = reviews[current];
 
   return (
-    <section className="border-t bg-black border-gray-250 pt-20 pb-15">
+    <section className="bg-black pt-20 pb-15">
       <div className="container-wrapper space-y-16">
         <article className="space-y-4 flex items-center justify-center flex-col">
           <h2 className="text-white text-5xl font-normal leading-[57.2px]">

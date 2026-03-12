@@ -86,7 +86,7 @@ export default function WhatDoIDo() {
   };
 
   return (
-    <section className="border-t bg-black border-gray-250 pt-20 pb-20 overflow-hidden">
+    <section className="bg-black pt-20 pb-20 overflow-hidden">
       <div className="container-wrapper">
         {/* Header */}
         <div className="space-y-4 flex items-center justify-center flex-col mb-16">

@@ -95,10 +95,11 @@ function AboutHero() {
                 animate={"visible"}
                 transition={{ duration: 0.5, delay: 0.03 }}
               >
-                I&apos;m Raymond Joseph, a product designer and no-code
-                developer crafting digital experiences that deliver meaningful
-                results. My approach combines strategic design thinking with
-                technical execution to create products that stand out.
+                I&apos;m Raymond Joseph, a creative and detail-oriented
+                Front-End Developer with a strong focus on user experience and
+                interface design. Passionate about building solution-centered
+                applications that prioritize performance, accessibility, and
+                modern UI interactions.
               </motion.p>
               <motion.p
                 variants={{
@@ -110,9 +111,12 @@ function AboutHero() {
                 transition={{ duration: 0.5, delay: 0.03 }}
                 className="text-base  sm:text-xl font-normal leading-[30px] text-gray-350"
               >
-                My creative journey began in the tactile world of handcrafted
-                arts, from signposts to screen printing, giving me a deep
-                appreciation for craftsmanship and attention to detail.
+                Adept at leveraging React, Next.js, TypeScript, and Tailwind
+                CSS to craft visually engaging, highly interactive, and scalable
+                web solutions. With hands-on experience collaborating with
+                teams, integrating APIs, and optimizing front-end performance, I
+                thrive in challenging environments that push me to solve
+                real-world problems through code.
               </motion.p>
 
               <motion.p
@@ -125,10 +129,9 @@ function AboutHero() {
                 transition={{ duration: 0.5, delay: 0.03 }}
                 className="text-base  sm:text-xl font-normal leading-[30px] text-gray-350"
               >
-                This foundation proved invaluable as I transitioned into the
-                digital realm, evolving from graphic design to branding, and
-                ultimately to product design, each step expanding my ability to
-                solve complex problems with elegant solutions.
+                Constantly exploring new technologies like Framer Motion, GSAP,
+                and Three.js, I aim to create intuitive and immersive digital
+                experiences that feel as good as they look.
               </motion.p>
               <motion.p
                 className="text-base  sm:text-xl font-normal leading-[30px] text-gray-350"
@@ -140,11 +143,10 @@ function AboutHero() {
                 animate={"visible"}
                 transition={{ duration: 0.5, delay: 0.3 }}
               >
-                Webflow and Framer have become my primary no-code tools,
-                enabling me to bridge the gap between design and development.
-                This portfolio itself demonstrates how I leverage no-code
-                platforms to create responsive, high-performing digital
-                experiences with a client-first mindset.
+                Beyond the frontend, I also have hands-on experience with
+                Node.js and Express, giving me a broader understanding of
+                full-stack development and enabling more effective collaboration
+                with backend teams.
               </motion.p>
               {/* Expandable content with stagger animation */}
               <motion.div
@@ -169,41 +171,10 @@ function AboutHero() {
                   animate={isFullView ? "visible" : "hidden"}
                   transition={{ duration: 0.5, delay: 0.4 }}
                 >
-                  Currently, I&apos;m expanding my technical skill stack by
-                  strengthening my coding capabilities and exploring AI prompt
-                  engineering to stay at the forefront of industry innovations.
-                </motion.p>
-
-                <motion.p
-                  className="text-base  sm:text-xl font-normal leading-[30px] text-gray-350"
-                  variants={{
-                    hidden: { opacity: 0, y: 20 },
-                    visible: { opacity: 1, y: 0 },
-                  }}
-                  initial="hidden"
-                  animate={isFullView ? "visible" : "hidden"}
-                  transition={{ duration: 0.5, delay: 0.5 }}
-                >
-                  Outside of design, my dedication to fitness reflects my
-                  approach to creative work: disciplined, consistent, and always
-                  pushing boundaries. This same mindset drives how I tackle
-                  every project.
-                </motion.p>
-
-                <motion.p
-                  className="text-base  sm:text-xl font-normal leading-[30px] text-gray-350"
-                  variants={{
-                    hidden: { opacity: 0, y: 20 },
-                    visible: { opacity: 1, y: 0 },
-                  }}
-                  initial="hidden"
-                  animate={isFullView ? "visible" : "hidden"}
-                  transition={{ duration: 0.5, delay: 0.6 }}
-                >
-                  My diverse interests in literature, music, and culinary arts
-                  aren&apos;t just hobbies; they&apos;re wellsprings of
-                  inspiration that inform my design perspective and help me
-                  create more human-centered digital experiences.
+                  I care deeply about the craft — clean code, consistent
+                  component systems, and interfaces that are both beautiful and
+                  functional. Whether working solo or within a team, I bring the
+                  same level of precision and ownership to every project I touch.
                 </motion.p>
 
                 <motion.p
@@ -214,7 +185,7 @@ function AboutHero() {
                   }}
                   initial="hidden"
                   animate={isFullView ? "visible" : "hidden"}
-                  transition={{ duration: 0.5, delay: 0.7 }}
+                  transition={{ duration: 0.5, delay: 0.5 }}
                 >
                   Ready to build something exceptional together?
                 </motion.p>

@@ -21,6 +21,12 @@ const services = [
       "Building performant, pixel-perfect web interfaces with React, Next.js, and Tailwind CSS that scale seamlessly.",
   },
   {
+    Icon: Globe,
+    title: "API Integration",
+    description:
+      "Connecting frontends to REST and GraphQL APIs, third-party services, and backend systems with clean, reliable data flows.",
+  },
+  {
     Icon: Smartphone,
     title: "Responsive Design",
     description:
@@ -37,12 +43,6 @@ const services = [
     title: "Performance Optimization",
     description:
       "Auditing and improving web apps for speed — lazy loading, code splitting, and Core Web Vitals tuning.",
-  },
-  {
-    Icon: Globe,
-    title: "API Integration",
-    description:
-      "Connecting frontends to REST and GraphQL APIs, third-party services, and backend systems with clean, reliable data flows.",
   },
   {
     Icon: Layers,

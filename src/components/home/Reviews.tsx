@@ -1,12 +1,11 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import { FaLinkedinIn } from "react-icons/fa";
 import PlntrCeo from "../../../public/png/azeez.jpeg";
 import Smart from "../../../public/png/smart.jpeg";
 import Rotimi from "../../../public/png/rotimi.webp";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const reviews = [
   {
@@ -44,8 +43,12 @@ function Reviews() {
     setCurrent(next);
   };
 
-  const prev = () => go(current === 0 ? reviews.length - 1 : current - 1);
   const next = () => go(current === reviews.length - 1 ? 0 : current + 1);
+
+  useEffect(() => {
+    const interval = setInterval(next, 4000);
+    return () => clearInterval(interval);
+  }, [current]);
 
   const review = reviews[current];
 
@@ -64,15 +67,6 @@ function Reviews() {
         </article>
 
         <div className="relative flex items-center justify-center min-h-[420px]">
-          {/* Left arrow */}
-          <button
-            onClick={prev}
-            aria-label="Previous review"
-            className="absolute left-0 z-10 text-gray-350 hover:text-white transition-colors text-2xl  border rounded-[100vh] size-12 flex items-center justify-center "
-          >
-            <ChevronLeft />
-          </button>
-
           {/* Slide content */}
           <div className="w-full max-w-3xl overflow-hidden px-12">
             <AnimatePresence mode="wait" custom={direction}>
@@ -83,14 +77,7 @@ function Reviews() {
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: direction * -60 }}
                 transition={{ duration: 0.4, ease: "easeInOut" }}
-                drag="x"
-                dragConstraints={{ left: 0, right: 0 }}
-                dragElastic={0.2}
-                onDragEnd={(_, info) => {
-                  if (info.offset.x < -50) next();
-                  else if (info.offset.x > 50) prev();
-                }}
-                className="flex flex-col items-center text-center gap-10 cursor-grab active:cursor-grabbing"
+                className="flex flex-col items-center text-center gap-10"
               >
                 <p className="text-white text-xl md:text-2xl font-normal leading-relaxed text-pretty">
                   {review.content}
@@ -126,24 +113,13 @@ function Reviews() {
               </motion.div>
             </AnimatePresence>
           </div>
-
-          {/* Right arrow */}
-          <button
-            onClick={next}
-            aria-label="Next review"
-            className="absolute right-0 z-10 text-gray-350 hover:text-white transition-colors text-2xl  border rounded-[100vh] size-12 flex items-center justify-center "
-          >
-            <ChevronRight />
-          </button>
         </div>
 
         {/* Dots */}
         <div className="flex items-center justify-center gap-2">
           {reviews.map((_, i) => (
-            <button
+            <div
               key={i}
-              onClick={() => go(i)}
-              aria-label={`Go to review ${i + 1}`}
               className={`rounded-full transition-all duration-300 ${
                 i === current ? "bg-white w-6 h-2" : "bg-gray-400 w-2 h-2"
               }`}

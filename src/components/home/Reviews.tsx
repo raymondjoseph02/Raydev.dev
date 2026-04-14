@@ -17,14 +17,6 @@ const reviews = [
     content:
       "I had the pleasure of collaborating with Raymond on a recent project for a PLNTR client. He was fast, responsive, and delivered a pixel-perfect UI that matched the design flawlessly. His attention to detail and efficiency made the development process smooth and enjoyable. Highly recommend working with him.",
   },
-  // {
-  //   name: "Oluwaseun Adefioye",
-  //   role: "Product Manager, Fintech",
-  //   image: PlntrCeo,
-  //   linkedin: "https://linkedin.com",
-  //   content:
-  //     "Raymond is a talented developer who consistently delivers high-quality work. His ability to understand complex requirements and translate them into elegant solutions is impressive. I look forward to working with him again on future projects.",
-  // },
   {
     name: "Olarotimi Balogun",
     role: "Senior Developer & Mentor",
@@ -44,7 +36,7 @@ const reviews = [
 ];
 
 function Reviews() {
-  const [current, setCurrent] = useState(0);
+  const [current, setCurrent] = useState(1);
   const [direction, setDirection] = useState(1);
 
   const go = (next: number) => {

@@ -1,12 +1,10 @@
 import { ProjectDataProps } from "@/types/types";
 import smartFilingThumbnail from "../../public/png/social-graph.png";
 import pay4me from "../../public/png/Pay4me Cover.png";
-import audio_phile from "../../public/png/audiophile.png";
 import defifundr_landing from "../../public/png/defifundr-landing.png";
 import ckollect from "../../public/png/ckollect.png";
 import oneapp_workplace from "../../public/png/1app workplace.png";
 import couch_time from "../../public/png/couch time.png";
-import prodigiouscl from "../../public/png/prodigiouscl.png";
 import kdb from "../../public/png/kdb land and air.png";
 export const projects: ProjectDataProps[] = [
   {
@@ -19,24 +17,6 @@ export const projects: ProjectDataProps[] = [
     stack: ["Vue", "tailwind", "Javascript", "framer motion", "REST Api"],
     github: "Private",
     liveLink: "https://main.d1rxdps2bhrfkf.amplifyapp.com",
-  },
-  {
-    title: "couch time",
-    images: { thumbnail: couch_time },
-    isLive: true,
-    isSideProject: true,
-    description:
-      "A side project inspired by Netflix, built to practice consuming public APIs. I handled the design myself — pulling live movie and TV show data to display browsable content in a clean, familiar streaming-style UI.",
-    stack: [
-      "React",
-      "tailwind",
-      "typescript",
-      "framer motion",
-      "React-form-hook",
-      "REST Api",
-    ],
-    github: "https://github.com/raymondjoseph02/couch-time",
-    liveLink: "https://ckollect.com/",
   },
   {
     title: "ckollect",
@@ -57,56 +37,6 @@ export const projects: ProjectDataProps[] = [
     liveLink: "https://ckollect.com/",
   },
   {
-    title: "prodigiou scl",
-    images: { thumbnail: prodigiouscl },
-    isLive: true,
-    isSideProject: false,
-    description:
-      "A multi-page landing site built for an expert financial and management consulting firm, including a contact us page. Focused on conveying professionalism and trust through clean layout, strong typography, and smooth interactions.",
-    stack: [
-      "react",
-      "tailwind",
-      "typescript",
-      "framer motion",
-      "Redux",
-      "React-form-hook",
-    ],
-    github: "Private",
-    liveLink: "https://www.prodigiouscl.com/",
-  },
-  // {
-  //   title: "Defifundr Dashboard",
-  //   images: { thumbnail: pay4me },
-  //   isLive: true,
-  //   isSideProject: false,
-  //   description:
-  //     "A visually polished single-page website crafted to showcase refined attention to detail, modern aesthetics, and seamless user experience. This project demonstrates precision in layout, typography, and responsive design, with a focus on clean UI and subtle interactions. Built with React, Tailwind CSS, and Framer Motion to highlight smooth transitions and engaging visual appeal.",
-  //   stack: [
-  //     "react",
-  //     "tailwind",
-  //     "typescript",
-  //     "framer motion",
-  //     "Redux",
-  //     "React-form-hook",
-  //   ],
-  //   github: "Private",
-  //   liveLink: "Pay4me.netify.app",
-  // },
-  {
-    title: "Audiophile",
-    description:
-      "Built an e-commerce platform focused on high-end audio products. Developed responsive pages for product listings and details using JavaScript and Firebase for data management. Implemented features like user authentication and dynamic cart functionality to enhance the user shopping experience.",
-    images: {
-      thumbnail: audio_phile,
-      others: ["", ""],
-    },
-    isLive: true,
-    isSideProject: true,
-    liveLink: "https://smartfiling.com/ ",
-    github: "https://github.com/raymondjoseph02/audiophile",
-    stack: ["html", "sass", "javascript", "Firebase"],
-  },
-  {
     title: "Smart filing",
     description:
       "Redesigned and developed the Landing, Contact Us, Login/Sign-Up, and Terms & Conditions pages for Smart Filing. Focused on creating clean, responsive, and user-friendly interfaces using React, Tailwind CSS, and JavaScript, resulting in a modernized and cohesive user experience.",
@@ -125,19 +55,18 @@ export const projects: ProjectDataProps[] = [
     isLive: true,
     isSideProject: true,
     description:
-      "A visually polished single-page website crafted to showcase refined attention to detail, modern aesthetics, and seamless user experience. This project demonstrates precision in layout, typography, and responsive design, with a focus on clean UI and subtle interactions. Built with React, Tailwind CSS, and Framer Motion to highlight smooth transitions and engaging visual appeal.",
+      "A UI practice project built during my internship to sharpen my frontend skills. I designed and built a clean dashboard interface focused on layout precision, component structure, and smooth interactions using React, Tailwind CSS, and Framer Motion.",
     stack: ["react", "tailwind", "typescript", "framer motion"],
     github: "https://github.com/raymondjoseph02/pay4me",
-    liveLink: "Pay4me.netify.app",
+    liveLink: "https://pay4me.netlify.app",
   },
-
   {
     title: "DefiFundr Landing",
     images: { thumbnail: defifundr_landing },
     isLive: true,
     isSideProject: false,
     description:
-      "A visually polished single-page website crafted to showcase refined attention to detail, modern aesthetics, and seamless user experience. This project demonstrates precision in layout, typography, and responsive design, with a focus on clean UI and subtle interactions. Built with React, Tailwind CSS, and Framer Motion to highlight smooth transitions and engaging visual appeal.",
+      "Landing page for DefiFundr, an employee payroll management system that leverages crypto to pay employees. Built to communicate the product's value clearly with a polished, responsive design and smooth interactions.",
     stack: [
       "react",
       "tailwind",
@@ -150,7 +79,7 @@ export const projects: ProjectDataProps[] = [
     liveLink: "https://www.defifundr.com/",
   },
   {
-    title: "KDB land & Air ",
+    title: "KDB Land & Air",
     images: { thumbnail: kdb },
     isLive: true,
     isSideProject: false,
@@ -166,5 +95,23 @@ export const projects: ProjectDataProps[] = [
     ],
     github: "Private",
     liveLink: "https://kdbland.netlify.app/",
+  },
+  {
+    title: "Couch Time",
+    images: { thumbnail: couch_time },
+    isLive: false,
+    isSideProject: true,
+    description:
+      "A side project inspired by Netflix, built to practice consuming public APIs. I handled the design myself — pulling live movie and TV show data to display browsable content in a clean, familiar streaming-style UI.",
+    stack: [
+      "React",
+      "tailwind",
+      "typescript",
+      "framer motion",
+      "React-form-hook",
+      "REST Api",
+    ],
+    github: "https://github.com/raymondjoseph02/couch-time",
+    liveLink: "",
   },
 ];

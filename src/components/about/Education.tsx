@@ -1,5 +1,31 @@
 import ExperienceCard from "./ExperienceCard";
 
+const education = [
+  {
+    duration: "2024 — 2025",
+    title: "Diploma in Software Engineering",
+    company: "SQI College of ICT, Ibadan",
+    description:
+      "Completed an intensive, hands-on software engineering program with a strong focus on frontend development and modern web technologies.",
+    bullets: [
+      "Trained in building scalable, production-ready applications using JavaScript, TypeScript, and modern frameworks",
+      "Gained practical experience in component-based architecture, REST API integration, and state management",
+      "Worked on real-world projects simulating industry workflows, version control, and collaborative development environments",
+    ],
+  },
+  {
+    duration: "3-Month Intensive",
+    title: "Frontend Development Program",
+    company: "Dev & Design (Online Program)",
+    description:
+      "Completed a fast-paced online program focused on modern frontend development practices.",
+    bullets: [
+      "Built responsive user interfaces using React and modern CSS frameworks",
+      "Strengthened understanding of UI/UX fundamentals, accessibility, and responsive design principles",
+    ],
+  },
+];
+
 function Education() {
   return (
     <section className="pt-18">
@@ -14,8 +40,9 @@ function Education() {
           </p>
         </div>
         <div className="grow space-y-8  flex flex-col items-center sm:items-end">
-          <ExperienceCard />
-          <ExperienceCard />
+          {education.map((edu) => (
+            <ExperienceCard key={edu.company} {...edu} />
+          ))}
         </div>
       </div>
     </section>
